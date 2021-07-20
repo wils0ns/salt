@@ -1,12 +1,12 @@
 services:
-  salt-master:
+  saltmaster:
     image: saltmaster:3003.1-ubuntu
     build:
       context: .
       dockerfile: ./master.dockerfile
     command: ['-l', 'debug']
 
-  salt-minion:
+  saltminion:
     image: saltminion:3003.1-ubuntu
     build:
       context: .

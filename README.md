@@ -1,7 +1,13 @@
 # SaltStack Experiments
 
-## Build and run
+## Build
 
 ```bash
-docker compose -f docker/docker-compose.yaml up --build
+docker compose -f docker/docker-compose.yaml build
+```
+
+## Run
+
+```bash
+docker compose up --scale minion=2
 ```
