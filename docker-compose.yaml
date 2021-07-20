@@ -1,0 +1,13 @@
+services:
+  master:
+    image: saltmaster:3003.1-ubuntu
+    volumes:
+      - ./config/master.yaml:/etc/salt/master:ro
+    command: ['-l', 'debug']
+  minion:
+    image: saltminion:3003.1-ubuntu
+    links:
+      - "master:salt"
+    volumes:
+      - ./config/minion.yaml:/etc/salt/minion:ro
+    command: ['-l', 'debug']
