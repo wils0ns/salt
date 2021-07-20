@@ -1,0 +1,11 @@
+Salt Master:
+  ☐ Setup local filesystem:
+    ☐ States
+    ☐ Modules
+  ☐ Setup gitfs for filesystem
+  ☐ Setup gitfs for pillar
+  ☐ Jinja templating on pillar files?
+Salt Minion:
+  ☐ Update grains
+  ☐ Update minion
+  ☐
