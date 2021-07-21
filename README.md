@@ -15,6 +15,7 @@ docker compose up --scale minion=2
 ## References
 
 ### Open Salt
+
 * [cli](https://docs.saltproject.io/en/latest/ref/cli/salt.html)
 * [salt-call](https://docs.saltproject.io/en/latest/ref/cli/salt-call.html)
 * [best practices](https://docs.saltproject.io/en/latest/topics/best_practices.html)
